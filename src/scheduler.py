@@ -62,8 +62,8 @@ def switch_macros(SWITCH: str) -> None:
         _replace_string_in_file(refresh_data_and_perform_nads_file, 16, "    Call BR3AK")
         _replace_string_in_file(refresh_data_and_perform_nadst_file, 16, "    Call BR3AK")
     elif SWITCH == 'ON':
-        refresh_data_and_perform_nads_file = r'N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\macros\RefreshDataAndPerformNADS.bas'
-        refresh_data_and_perform_nadst_file = r'N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\macros\RefreshDataAndPerformNADST.bas'
+        refresh_data_and_perform_nads_file = r'path\RefreshDataAndPerformNADS.bas'
+        refresh_data_and_perform_nadst_file = r'path\RefreshDataAndPerformNADST.bas'
         _replace_string_in_file(refresh_data_and_perform_nads_file, 16, "    'Call BR3AK")
         _replace_string_in_file(refresh_data_and_perform_nadst_file, 16, "    'Call BR3AK")
 
@@ -106,14 +106,14 @@ def run_automation(json_file_path: str, arguments: any) -> None:
 
 
     # Use os.startfile to open the Excel file.
-    os.startfile(r"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\init.xlsm")
+    os.startfile(r"path\init.xlsm")
     print('Excel process launched')
 
     # Print a message that the cooldown period has started and sleep for 20 seconds.
     print('Cool down period started')
     time.sleep(20)
     print('Cool down period finished')
-    os.startfile(r"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\_On-Start\On_Start_AUTO_ds.xlsm")
+    os.startfile(r"path\On_Start_AUTO_ds.xlsm")
     time.sleep(10)
 
     # If the 'execute_macro' argument is provided, execute the macro with 'should_execute_macro=True'.
