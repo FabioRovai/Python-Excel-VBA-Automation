@@ -1,0 +1,1 @@
+python N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\src\scheduler.py --json_file_path N:/Research/AUTO/VBA_CARD-main/AUTO-RUG/AUTO-main/data/jsons/MorningUpdates.json --script_type daily --kill_process True --macro_switch ON --main-automation --max_exe 15 --opening_buffer 120 --inter_op_buffer 20
