@@ -62,7 +62,7 @@ def add_vba_macros(excel, wb, needed_modules: List[str]) -> None:
     print('declaring modules')
     modules = needed_modules
     print('declaring path')
-    base_path = r"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\macros"
+    base_path = r"N:\path"
     for module in modules:
         print('adding macros')
         print('module')
@@ -113,7 +113,7 @@ def run_file_links(max_exe, opening_buffer, inter_op_buffer, json_file_path: str
             if file_name.endswith('.xlsm'):
                 last_folder=file_path.split('\\')[0].split('/')[-1]
                 print(last_folder)
-                status_path = fr"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\Status\run_status_{last_folder}.csv"
+                status_path = fr"N:path\run_status_{last_folder}.csv"
                 print()
 
 
@@ -187,13 +187,13 @@ def run_file_links(max_exe, opening_buffer, inter_op_buffer, json_file_path: str
     import pandas as pd
 
     # Read the file into a pandas dataframe
-    df = pd.read_csv(fr"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\Status\run_status_{last_folder}.csv",header=None,
+    df = pd.read_csv(fr"N:path\run_status_{last_folder}.csv",header=None,
                      names=['file_name','API_status','API_date'])
     df = df.drop_duplicates(subset=['file_name'], keep='last')
     df_filtered=df
     df_filtered.reset_index()
 
-    df_filtered.to_csv(fr"N:\Research\AUTO\VBA_CARD-main\AUTO-RUG\AUTO-main\data\Status\run_status_{last_folder}.csv", header=False, index=False)
+    df_filtered.to_csv(fr"N:path\run_status_{last_folder}.csv", header=False, index=False)
 
 
 
