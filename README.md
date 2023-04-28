@@ -1,5 +1,5 @@
-## Get Started with VBA_CARD Project
-The VBA_CARD project is a collection of VBA macros and Python scripts that automate tasks related to financial data analysis and reporting.
+## Get Started with Python-Excel-VBA-Automation Project
+The Python-Excel-VBA-Automation project is a collection of VBA macros and Python scripts that automate tasks related to financial data analysis and reporting.
 
 ## Project Structure
 The VBA_CARD project is structured as follows:
