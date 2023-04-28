@@ -1,4 +1,4 @@
-##Disclaimer
+## Disclaimer
 
 This is a reconstruction of a project I developed for Tellworth Investment. The project involves parsing data from JSON files and populating them into an Excel file. The project also requires the use of sensitive information, which are not included in this repository for security reasons.
 
